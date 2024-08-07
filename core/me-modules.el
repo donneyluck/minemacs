@@ -37,6 +37,7 @@
     ;; me-gtd
     me-keybindings
     me-latex
+    me-dashboard
     ;; me-lifestyle
     ;; me-math
     ;; me-media

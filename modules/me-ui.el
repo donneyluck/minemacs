@@ -39,20 +39,20 @@
   (doom-modeline-bar ((t (:inherit mode-line :background unspecified))))
   (doom-modeline-bar-inactive ((t (:inherit mode-line :background unspecified)))))
 
-(use-package enlight
-  :straight (:host github :repo "ichernyshovvv/enlight")
-  :when (>= emacs-major-version 29) ; TEMP+BUG: There is an issue with Emacs 28
-  :custom
-  (enlight-content
-   (enlight-menu
-    '(("Org Mode"
-       ("Org-Agenda (today)" (org-agenda nil "a") "a"))
-      ("Projects"
-       ("Switch to project" project-switch-project "p")))))
-  :init
-  (if minemacs-started-with-extra-args-p
-      (enlight-open)
-    (setq initial-buffer-choice #'enlight)))
+;; (use-package enlight
+;;   :straight (:host github :repo "ichernyshovvv/enlight")
+;;   :when (>= emacs-major-version 29) ; TEMP+BUG: There is an issue with Emacs 28
+;;   :custom
+;;   (enlight-content
+;;    (enlight-menu
+;;     '(("Org Mode"
+;;        ("Org-Agenda (today)" (org-agenda nil "a") "a"))
+;;       ("Projects"
+;;        ("Switch to project" project-switch-project "p")))))
+;;   :init
+;;   (if minemacs-started-with-extra-args-p
+;;       (enlight-open)
+;;     (setq initial-buffer-choice #'enlight)))
 
 (use-package lacarte
   :straight t
