@@ -998,12 +998,13 @@
 (+map! :package dirvish :module me-files
   ;; Open
   "o-" #'dirvish
+  "op" #'dirvish-side
   "oq" #'dirvish-quick-access
   ;; Search
   "sd" #'dirvish-fd)
 
-(+map! :package neotree :module me-files
-  "op" #'neotree-toggle)
+;; (+map! :package neotree :module me-files
+;;   "op" #'neotree-toggle)
 
 (+map! :package sudo-edit :module me-files
   "fF" #'sudo-edit-find-file
